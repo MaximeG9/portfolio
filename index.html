@@ -129,7 +129,7 @@
                 <div class="work">
                     <img src="img/work-1.png" alt="">
                     <div class="layer">
-                        <h3>Social Media App</h3>
+                        <h3><span>Social Media App</span></h3>
                         <p>
                             The app connects you to the talented people around the world.
                             Download it from playstore.
@@ -140,7 +140,7 @@
                 <div class="work">
                     <img src="img/work-2.png" alt="">
                     <div class="layer">
-                        <h3>Music App</h3>
+                        <h3><span>Music App</span></h3>
                         <p>
                             The app connects you to the talented people around the world.
                             Download it from playstore.
@@ -151,7 +151,7 @@
                 <div class="work">
                     <img src="img/work-3.png" alt="">
                     <div class="layer">
-                        <h3>Online Shopping App</h3>
+                        <h3><span>Online Shopping App</span></h3>
                         <p>
                             The app connects you to the talented people around the world.
                             Download it from playstore.
@@ -181,10 +181,10 @@
                     <a href="img/CV-MaximeGurbala.pdf" download class="btn btn2">Download CV</a>
                 </div>
                 <div class="contact-right">
-                    <form 
-                    method="POST" 
-                    action="https://script.google.com/macros/s/AKfycbwOKjFI6zAMl4Yom5qyPFYW7UYr6DA7cZPYjKn_uhMMDAINH5x80NimV-QTnenjiwA/exec"
-                    >
+                    <form
+                    id="contact-form" 
+                    method="POST"
+                        action="https://script.google.com/macros/s/AKfycbyJNGtRC_feO-78LA4fw62adbeZ7CFqaHVb5cG-byrSTruBb03EqikbBszud4KRt-w/exec">
                         <input type="text" name="Name" id="" placeholder="Your Name" required>
                         <input type="email" name="Email" id="" placeholder="Your Email" required>
                         <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
@@ -227,6 +227,24 @@
             sidemenu.style.right = "-200px";
         }
 
+    </script>
+
+    <script>
+        window.addEventListener("load", function () {
+            const form = document.getElementById('contact-form');
+            form.addEventListener("submit", function (e) {
+                e.preventDefault();
+                const data = new FormData(form);
+                const action = e.target.action;
+                fetch(action, {
+                    method: 'POST',
+                    body: data,
+                })
+                    .then(() => {
+                        alert("Success!");
+                    })
+            });
+        });
     </script>
 
 </body>
