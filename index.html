@@ -7,6 +7,10 @@
     <title>Portoflio Maxime Gurbala</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/8637628fda.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@100&family=Rokkitt&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -15,17 +19,19 @@
         <div class="container">
             <nav>
                 <img src="img/logo.png" alt="" class="logo">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
                 <p>UI/UX Designer</p>
-                <h1>Hi, I'm <span>Maxime</span> <br> Gurbala Form Firminy</h1>
+                <h1>Hi, I'm <span>Maxime</span> <br> Gurbala From Firminy</h1>
             </div>
         </div>
     </div>
@@ -38,12 +44,12 @@
                     <img src="img/user.png" alt="">
                 </div>
                 <div class="about-col-2">
-                    <h1  class="sub-title">About Me</h1>
+                    <h1 class="sub-title">About Me</h1>
                     <p>
-                        Lorem ipsum dolor sit amet. Qui omnis modi in maxime voluptas non facere ipsum. 
+                        Lorem ipsum dolor sit amet. Qui omnis modi in maxime voluptas non facere ipsum.
                         Quo quos similique rem quia expedita aut natus velit vel animi Quis aut officiis repellat.
-                        Et aliquam voluptas aut eveniet autem nam quis soluta sed sapiente cupiditate qui maiores 
-                        eveniet aut illum suscipit sit consequatur enim! Sed ipsam voluptas est molestiae obcaecati 
+                        Et aliquam voluptas aut eveniet autem nam quis soluta sed sapiente cupiditate qui maiores
+                        eveniet aut illum suscipit sit consequatur enim! Sed ipsam voluptas est molestiae obcaecati
                         qui quis omnis ut amet sequi est velit excepturi qui dolores beatae!
                     </p>
 
@@ -82,13 +88,13 @@
     <!-- ------------------------SERVICES-------------------------- -->
     <div id="services">
         <div class="container">
-            <h1  class="sub-title">My Services</h1>
+            <h1 class="sub-title">My Services</h1>
             <div class="services-list">
                 <div>
                     <i class="fa-solid fa-code"></i>
                     <h2>Web Design</h2>
                     <p>
-                        Lorem ipsum dolor sit amet. Qui omnis modi in maxime voluptas non facere ipsum. 
+                        Lorem ipsum dolor sit amet. Qui omnis modi in maxime voluptas non facere ipsum.
                         Quo quos similique rem quia expedita.
                     </p>
                     <a href="#">Learn more</a>
@@ -97,7 +103,7 @@
                     <i class="fa-solid fa-crop-simple"></i>
                     <h2>UI/UX Design</h2>
                     <p>
-                        Lorem ipsum dolor sit amet. Qui omnis modi in maxime voluptas non facere ipsum. 
+                        Lorem ipsum dolor sit amet. Qui omnis modi in maxime voluptas non facere ipsum.
                         Quo quos similique rem quia expedita.
                     </p>
                     <a href="#">Learn more</a>
@@ -106,7 +112,7 @@
                     <i class="fa-brands fa-app-store"></i>
                     <h2>App Design</h2>
                     <p>
-                        Lorem ipsum dolor sit amet. Qui omnis modi in maxime voluptas non facere ipsum. 
+                        Lorem ipsum dolor sit amet. Qui omnis modi in maxime voluptas non facere ipsum.
                         Quo quos similique rem quia expedita.
                     </p>
                     <a href="#">Learn more</a>
@@ -118,7 +124,7 @@
     <!-- ------------------------PORTFOLIO-------------------------- -->
     <div id="portfolio">
         <div class="container">
-            <h1  class="sub-title">My Work</h1>
+            <h1 class="sub-title">My Work</h1>
             <div class="work-list">
                 <div class="work">
                     <img src="img/work-1.png" alt="">
@@ -164,37 +170,64 @@
             <div class="row">
                 <div class="contact-left">
                     <h1 class="sub-title">Contact Me</h1>
-                    <p>contact@example.com</p>
-                    <p>0123456789</p>
+                    <p><i class="fa-solid fa-paper-plane"></i>contact@example.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>0123456789</p>
                     <div class="social-icons">
                         <a href=""><i class="fa-brands fa-facebook"></i></a>
                         <a href=""><i class="fa-brands fa-twitter-square"></i></a>
                         <a href=""><i class="fa-brands fa-instagram"></i></a>
                         <a href=""><i class="fa-brands fa-linkedin"></i></a>
                     </div>
+                    <a href="img/CV-MaximeGurbala.pdf" download class="btn btn2">Download CV</a>
                 </div>
-                <div class="contact-right"></div>
+                <div class="contact-right">
+                    <form 
+                    method="POST" 
+                    action="https://script.google.com/macros/s/AKfycbwOKjFI6zAMl4Yom5qyPFYW7UYr6DA7cZPYjKn_uhMMDAINH5x80NimV-QTnenjiwA/exec"
+                    >
+                        <input type="text" name="Name" id="" placeholder="Your Name" required>
+                        <input type="email" name="Email" id="" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
             </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Maxime. Made with <i class="fa-solid fa-heart"></i> by Easy Tutorials</p>
         </div>
     </div>
 
-<script>
+    <script>
 
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
+        let tablinks = document.getElementsByClassName("tab-links");
+        let tabcontents = document.getElementsByClassName("tab-contents");
 
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
         }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-    }
 
-</script>
+    </script>
+
+    <script>
+
+        let sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
 
 </body>
 
