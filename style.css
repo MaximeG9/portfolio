@@ -17,7 +17,7 @@ body {
 #header {
     width: 100%;
     height: 100vh;
-    background-image: url();
+    background-image: url('img/bg-large-screen.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -54,7 +54,7 @@ nav ul li a::after {
     content: '';
     width: 0;
     height: 3px;
-    background: #2AD4DF;
+    background: #1fafb4;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -78,7 +78,7 @@ nav ul li a:hover::after {
 }
 
 .header-text h1 span {
-    color: #2AD4DF;
+    color: #1fafb4;
 }
 
 /* --------------------ABOUT-------------------- */
@@ -130,7 +130,7 @@ nav ul li a:hover::after {
     content: '';
     width: 0;
     height: 3px;
-    background: #2AD4DF;
+    background: #1fafb4;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -147,7 +147,7 @@ nav ul li a:hover::after {
 }
 
 .tab-contents ul li span {
-    color: #23aeb8;
+    color: #1fafb4;
     font-size: 14px;
 }
 
@@ -201,7 +201,7 @@ nav ul li a:hover::after {
 }
 
 .services-list div:hover {
-    background: #2AD4DF;
+    background: #1fafb4;
     transform: translateY(-10px);
 }
 
@@ -234,7 +234,7 @@ nav ul li a:hover::after {
 .layer {
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), #2AD4DF);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), #1fafb4);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -257,7 +257,7 @@ nav ul li a:hover::after {
 
 .layer a {
     margin-top: 20px;
-    color: #2AD4DF;
+    color: #1fafb4;
     text-decoration: none;
     font-size: 18px;
     line-height: 60px;
@@ -281,7 +281,7 @@ nav ul li a:hover::after {
     display: block;
     margin: 50px auto;
     width: fit-content;
-    border: 1px solid #2AD4DF;
+    border: 1px solid #1fafb4;
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
@@ -290,7 +290,7 @@ nav ul li a:hover::after {
 }
 
 .btn:hover {
-    background: #2AD4DF;
+    background: #1fafb4;
 }
 
 /* -------------------CONTACT---------------- */
@@ -308,7 +308,7 @@ nav ul li a:hover::after {
 }
 
 .contact-left p i {
-    color: #2AD4DF;
+    color: #1fafb4;
     margin-right: 15px;
     font-size: 25px;
 }
@@ -327,13 +327,13 @@ nav ul li a:hover::after {
 }
 
 .social-icons a:hover {
-    color: #2AD4DF;
+    color: #1fafb4;
     transform: translateY(-5px);
 }
 
 .btn.btn2 {
     display: inline-block;
-    background: #2AD4DF;
+    background: #1fafb4;
 }
 
 .contact-right form {
@@ -369,7 +369,7 @@ form .btn2 {
 }
 
 .copyright i {
-    color: #2AD4DF;
+    color: #1fafb4;
 }
 
 /* ------------------------CSS FOR SMALL SCREEN----------------------------- */
@@ -380,7 +380,7 @@ nav .fa-solid {
 
 @media only screen and (max-width: 700px) {
     #header {
-        background-image: url(img/phone-background.png);
+        background-image: url(img/bg-small-screen.jpg);
     }
     .header-text {
         margin-top: 100%;
@@ -394,7 +394,7 @@ nav .fa-solid {
         font-size: 25px;
     }
     nav ul {
-        background: #2AD4DF;
+        background: #1fafb4;
         position: fixed;
         top: 0;
         right: -200px;
