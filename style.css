@@ -17,7 +17,7 @@ body {
 #header {
     width: 100%;
     height: 100vh;
-    background-image: url('img/bg-large-screen.jpg');
+    background-image: url('img/bg-desktop.png');
     background-size: cover;
     background-position: center;
 }
@@ -383,7 +383,7 @@ nav .fa-solid {
         font-family: 'Poppins', sans-serif;
     }
     #header {
-        background-image: url(img/bg-small-screen.jpg);
+        background-image: url(img/bg-mobile.png);
     }
     .header-text {
         margin-top: 100%;
